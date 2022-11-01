@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArquivoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/beneficiarios',[ArquivoController::class, 'index']);
+Route::get('/planos',[ArquivoController::class, 'criarTabela']);
+Route::post('/proposta',[ArquivoController::class, 'criarProposta']);

@@ -1,0 +1,60 @@
+:root{
+    --color_1: #ef4444;
+    --color_2: #f9f7f7;
+    --color_3: #0a88a9;
+}
+body{
+    background-color: var(--color_2);
+}
+.form-select, .form-control{
+    width: unset;
+}
+.form-control.beneficiarios{
+    display: unset;
+}
+#formBeneficiarios {
+    display: none;
+}
+.bootbox-close-button{
+    border-radius: 5px;
+    background-color: transparent;
+}
+.fa-trash{
+    color: var(--color_1);
+}
+.area-beneficiarios{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color_3);
+}
+.button-acao {
+    appearance: none;
+    background-color: transparent;
+    border-radius: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    outline: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    width: auto;
+}
+.button-acao{
+    border: 2px solid var(--color_3);
+    color: var(--color_3);
+}
+.button-acao:hover{
+    color: var(--color_2);
+    background-color: var(--color_3);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+.button-acao:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
