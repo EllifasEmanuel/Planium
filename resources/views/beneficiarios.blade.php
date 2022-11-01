@@ -76,7 +76,6 @@
                 }
             }).done(function(res){
                 areaForm.style.display = "unset"
-                console.log(res);
                 tabela.innerHTML += `${res}`;
             })
         }else{
@@ -109,7 +108,6 @@
                 quantidadeBeneficiarios: quantidadeBeneficiarios
             }
         }).done(function(res){
-            console.log(res)
             if(res.error == true){
                 bootbox.alert(res.data);
             }else{
